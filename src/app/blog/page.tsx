@@ -89,7 +89,7 @@ function PostMedia({ post }: { post: SanityDocument }) {
 function ExternalMedia({ mediaUrl, title, mainImage }: { 
   mediaUrl: string, 
   title: string, 
-  mainImage?: any 
+  mainImage?: { asset?: { url?: string } } 
 }) {
   // YouTube or Vimeo
   if (/youtube|youtu\.be|vimeo/.test(mediaUrl)) {

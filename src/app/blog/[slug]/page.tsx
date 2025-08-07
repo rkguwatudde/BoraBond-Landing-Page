@@ -4,6 +4,7 @@ import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import { client } from "@/sanity/client";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]`;
 
@@ -61,7 +62,7 @@ export default async function PostPage({
             height={310}
           />
         ) : /\.(jpg|jpeg|png|gif|webp|avif)$/i.test(post.mediaUrl) ? (
-          <img
+          <Image
             src={post.mediaUrl}
             alt={post.title}
             className="aspect-video rounded-xl border border-emerald-100 shadow mb-4 w-full"
@@ -80,7 +81,7 @@ export default async function PostPage({
             height={310}
           />
         ) : (
-          <img
+          <Image
             src={postMediaUrl}
             alt={post.title}
             className="aspect-video rounded-xl border border-emerald-100 shadow mb-4 w-full"
@@ -89,7 +90,7 @@ export default async function PostPage({
           />
         )
       ) : postImageUrl && (
-        <img
+        <Image
           src={postImageUrl}
           alt={post.title}
           className="aspect-video rounded-xl border border-emerald-100 shadow mb-4 w-full"
