@@ -1,0 +1,81 @@
+-- Confirm some tables , if are needed :
+-- Recreate tables in prod schema (structure only)
+CREATE TABLE prod.user_profiles (LIKE public.user_profiles INCLUDING ALL);
+
+
+
+CREATE TABLE prod.email_verification_codes (LIKE public.email_verification_codes INCLUDING ALL);
+CREATE TABLE prod.compliance_decisions (LIKE public.compliance_decisions INCLUDING ALL);
+CREATE TABLE prod.paid_coupons (LIKE public.paid_coupons INCLUDING ALL);
+CREATE TABLE prod.stanbic_accounts_view (LIKE public.stanbic_accounts_view INCLUDING ALL);
+CREATE TABLE prod.investment_strategy (LIKE public.investment_strategy INCLUDING ALL);
+CREATE TABLE prod.veriff_config (LIKE public.veriff_config INCLUDING ALL);
+CREATE TABLE prod.customer_bond_holdings (LIKE public.customer_bond_holdings INCLUDING ALL);
+CREATE TABLE prod.verification_records (LIKE public.verification_records INCLUDING ALL);
+CREATE TABLE prod.activity_limits (LIKE public.activity_limits INCLUDING ALL);
+CREATE TABLE prod.payment_transactions (LIKE public.payment_transactions INCLUDING ALL);
+CREATE TABLE prod.currency_exchange_rates (LIKE public.currency_exchange_rates INCLUDING ALL);
+CREATE TABLE prod.monthly_deposit_jobs (LIKE public.monthly_deposit_jobs INCLUDING ALL);
+CREATE TABLE prod.fees_config (LIKE public.fees_config INCLUDING ALL);
+CREATE TABLE prod.user_profiles (LIKE public.user_profiles INCLUDING ALL);
+CREATE TABLE prod.onboarding_details (LIKE public.onboarding_details INCLUDING ALL);
+CREATE TABLE prod.cybrid_verifications (LIKE public.cybrid_verifications INCLUDING ALL);
+CREATE TABLE prod.customer_bond_holdings_view (LIKE public.customer_bond_holdings_view INCLUDING ALL);
+CREATE TABLE prod.identification_numbers (LIKE public.identification_numbers INCLUDING ALL);
+CREATE TABLE prod.bond_coupon_schedules (LIKE public.bond_coupon_schedules INCLUDING ALL);
+CREATE TABLE prod.cybrid_webhook_events (LIKE public.cybrid_webhook_events INCLUDING ALL);
+CREATE TABLE prod.user_roles (LIKE public.user_roles INCLUDING ALL);
+CREATE TABLE prod.available_bonds (LIKE public.available_bonds INCLUDING ALL);
+CREATE TABLE prod.onboarding_references (LIKE public.onboarding_references INCLUDING ALL);
+CREATE TABLE prod.available_bond_coupon_schedules (LIKE public.available_bond_coupon_schedules INCLUDING ALL);
+CREATE TABLE prod.upcoming_available_bond_coupon_payments (LIKE public.upcoming_available_bond_coupon_payments INCLUDING ALL);
+CREATE TABLE prod.bonds_dropdown (LIKE public.bonds_dropdown INCLUDING ALL);
+CREATE TABLE prod.contact_messages (LIKE public.contact_messages INCLUDING ALL);
+CREATE TABLE prod.email_config (LIKE public.email_config INCLUDING ALL);
+CREATE TABLE prod.stanbic_accounts (LIKE public.stanbic_accounts INCLUDING ALL);
+CREATE TABLE prod.addresses (LIKE public.addresses INCLUDING ALL);
+CREATE TABLE prod.api_credentials_sandbox (LIKE public.api_credentials_sandbox INCLUDING ALL);
+CREATE TABLE prod.cybrid_customers (LIKE public.cybrid_customers INCLUDING ALL);
+CREATE TABLE prod.cybrid_external_bank_accounts (LIKE public.cybrid_external_bank_accounts INCLUDING ALL);
+
+
+
+Example in JavaScript (Edge Function):
+const { data, error } = await supabase
+  .from('prod.table_name')
+  .select('*');
+
+  Step 5: Set Up RLS (Row-Level Security) for Prod Tables
+Enable RLS for each prod table:
+ALTER TABLE prod.table_name ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Allow read access to authenticated users"
+ON prod.customers
+FOR SELECT
+TO authenticated
+USING (true);
+
+
+✅ Step 6: Deploy New Functions (Optional)
+
+replicate the function 
+supabase/
+  functions/
+    dev/
+    prod/
+
+
+
+SUPABASE_URL=https://xyzcompany.supabase.co
+SUPABASE_ANON_KEY=your_prod_anon_key
+
+In your function:
+const supabase = createClient(
+  process.env.SUPABASE_URL!,
+  process.env.SUPABASE_ANON_KEY!
+);
+
+Then, when deploying:
+cd supabase/functions/prod
+supabase functions deploy createCustomer --env-file .env
+📌 Be sure to ex

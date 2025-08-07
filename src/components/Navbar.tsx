@@ -12,6 +12,7 @@ export default function Navbar() {
     { name: 'Bonds', href: '#bonds' },
     { name: 'How It Works', href: '#how-it-works' },
     { name: 'About', href: '/about' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ]
 
