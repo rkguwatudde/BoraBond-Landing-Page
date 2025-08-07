@@ -84,7 +84,7 @@ export default function CTA() {
             <div className="flex items-center justify-center mb-2">
               <GlobeAltIcon className="w-10 h-10 text-white" />
             </div>
-            <div className="text-emerald-100">Fuel Africa's future through your investments</div>
+            <div className="text-emerald-100">Fuel Africa&apos;s future through your investments</div>
           </div>
           <div className="text-center">
             <div className="flex items-center justify-center mb-2">
