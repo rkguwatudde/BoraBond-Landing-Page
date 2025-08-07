@@ -7,6 +7,8 @@ import {
   EnvelopeIcon
 } from '@heroicons/react/24/outline'
 import NewsletterSubscription from './NewsletterSubscription'
+// If you haven't already, run: npm install react-icons
+import { FaLinkedin, FaTwitter, FaFacebook, FaYoutube } from 'react-icons/fa';
 
 export default function Footer() {
   const footerLinks = {
@@ -14,7 +16,7 @@ export default function Footer() {
       { name: 'About Us', href: '/about' },
       { name: 'Our Team', href: '#team' },
       { name: 'Careers', href: '#careers' },
-      { name: 'Press', href: '#press' }
+      { name: 'Blog', href: '/blog' }
     ],
     products: [
       { name: 'African Bonds', href: '#bonds' },
@@ -36,12 +38,32 @@ export default function Footer() {
     ]
   }
 
+
   const socialLinks = [
-    { name: 'LinkedIn', href: '#', icon: 'LI' },
-    { name: 'Twitter', href: '#', icon: 'TW' },
-    { name: 'Facebook', href: '#', icon: 'FB' },
-    { name: 'YouTube', href: '#', icon: 'YT' }
-  ]
+    { name: 'LinkedIn', href: '#', icon: FaLinkedin },
+    { name: 'Twitter', href: '#', icon: FaTwitter },
+    { name: 'Facebook', href: '#', icon: FaFacebook },
+    { name: 'YouTube', href: '#', icon: FaYoutube }
+  ];
+
+  // ...
+
+  // In your return statement, replace the placeholder with:
+  // Social Links Section Example:
+  // <div className="flex space-x-4 mt-6">
+  //   {socialLinks.map((link) => (
+  //     <a
+  //       key={link.name}
+  //       href={link.href}
+  //       aria-label={link.name}
+  //       target="_blank"
+  //       rel="noopener noreferrer"
+  //       className="text-gray-400 hover:text-emerald-400 transition-colors text-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded-full"
+  //     >
+  //       <link.icon />
+  //     </a>
+  //   ))}
+  // </div>
 
   return (
     <footer id="contact" className="bg-gray-900 text-white py-12">
@@ -57,6 +79,22 @@ export default function Footer() {
           >
             <h3 className="text-2xl font-bold text-emerald-400 mb-4">BoraBond</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
+
+            {/* Social Links */}
+            <div className="flex space-x-4 mt-6">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  aria-label={link.name}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-emerald-400 transition-colors text-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded-full"
+                >
+                  <link.icon />
+                </a>
+              ))}
+            </div>
               Your gateway to African government bonds. Invest in Africa&apos;s growth 
               while earning attractive returns with institutional-grade security.
             </p>
@@ -184,7 +222,7 @@ export default function Footer() {
                 whileTap={{ scale: 0.9 }}
               >
                 <span className="text-sm font-bold text-gray-300 hover:text-white">
-                  {social.icon}
+                  <social.icon />
                 </span>
               </motion.a>
             ))}
