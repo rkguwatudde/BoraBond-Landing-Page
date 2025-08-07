@@ -123,7 +123,7 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-200">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
               {/* Background Video */}
               <video 
                 id="hero-video"
@@ -144,19 +144,19 @@ export default function Hero() {
               {!isVideoPlaying && (
                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center cursor-pointer" onClick={handlePlayVideo}>
                   <motion.div 
-                    className="bg-white bg-opacity-90 rounded-full p-6 shadow-2xl border-4 border-white hover:bg-opacity-100 transition-all group"
+                    className="bg-white bg-opacity-90 rounded-full p-2 shadow-2xl border-2 border-white hover:bg-opacity-100 transition-all group"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 1 }}
                   >
-                    <PlayIcon className="w-16 h-16 text-emerald-600 ml-1 group-hover:text-emerald-700 transition-colors" />
+                    <PlayIcon className="w-12 h-12 text-emerald-600 ml-1 group-hover:text-emerald-700 transition-colors" />
                   </motion.div>
                   
                   {/* Optional overlay text */}
-                  <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center text-white">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/20">
+                  <div className="absolute bottom-2  left-1/2 transform -translate-x-1/2 text-center text-white">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-lg px-2 py-2 border border-white/20">
                       <p className="text-sm font-medium">Click to Watch Our Story</p>
                       <p className="text-xs opacity-90">Discover African Investment Opportunities</p>
                     </div>
