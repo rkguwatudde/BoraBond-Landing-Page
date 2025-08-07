@@ -69,7 +69,7 @@ export default function CTA() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Invest with purpose. Build your future. Power Africa’s.
+          Invest with purpose. Build your future. Power Africa&apos;s.
         </motion.p>
         
         {/* Stats */}
