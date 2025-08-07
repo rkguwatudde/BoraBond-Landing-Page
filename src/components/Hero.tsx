@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowRightIcon, PlayIcon, CalendarDaysIcon, XMarkIcon } from '@heroicons/react/24/solid'
+import { ArrowRightIcon, PlayIcon, CalendarDaysIcon, XMarkIcon, ChartBarIcon, CurrencyDollarIcon, ShieldCheckIcon } from '@heroicons/react/24/solid'
 
 export default function Hero() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false)
@@ -48,7 +48,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               Access attractive, government-backed bonds from Africa&apos;s fastest-growing economies. 
-              Earn competitive returns while supporting sustainable development across the continent.
+              Earn competitive returns while supporting continental development.
             </motion.p>
             
             <motion.div 
@@ -75,26 +75,45 @@ export default function Hero() {
               </button>
             </motion.div>
             
-            {/* Stats */}
+            {/* Benefits */}
             <motion.div 
               className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
+              {/* Card 1 - Historically Attractive Yields */}
               <div className="text-center">
-                <div className="text-2xl font-bold text-emerald-600">12%+</div>
-                <div className="text-sm text-gray-600">Average Returns</div>
+                <div className="flex justify-center mb-2">
+                  <ChartBarIcon className="w-10 h-10 text-emerald-600" />
+                </div>
+                <div className="text-base font-bold text-gray-900 mb-1">Attractive Yields</div>
+                <div className="text-sm text-gray-600">Historically attractive yields.</div>
               </div>
+              
+              {/* Card 2 - Low Minimums */}
               <div className="text-center">
-                <div className="text-2xl font-bold text-emerald-600">15+</div>
-                <div className="text-sm text-gray-600">African Countries</div>
+                <div className="flex justify-center mb-2">
+                  <CurrencyDollarIcon className="w-10 h-10 text-emerald-600" />
+                </div>
+                <div className="text-base font-bold text-gray-900 mb-1">Low Minimums</div>
+                <div className="text-sm text-gray-600">Start with as little as $100.</div>
               </div>
+              
+              {/* Card 3 - Low Fees */}
               <div className="text-center">
-                <div className="text-2xl font-bold text-emerald-600">$50M+</div>
-                <div className="text-sm text-gray-600">Assets Managed</div>
+                <div className="flex justify-center mb-2">
+                  <ShieldCheckIcon className="w-10 h-10 text-emerald-600" />
+                </div>
+                <div className="text-base font-bold text-gray-900 mb-1">Low Fees</div>
+                <div className="text-sm text-gray-600">1% annual advisory fee.</div>
               </div>
             </motion.div>
+            
+            {/* Disclaimer */}
+            <div className="mt-6 text-xs text-gray-400 text-center">
+              Past performance does not guarantee future results. All investments carry risk, including possible loss of principal.
+            </div>
           </motion.div>
           
           {/* Video Section - Right Side */}

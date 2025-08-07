@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { RocketLaunchIcon, CalendarDaysIcon, XMarkIcon } from '@heroicons/react/24/solid'
+import { RocketLaunchIcon, CalendarDaysIcon, XMarkIcon, GlobeAltIcon, UserGroupIcon, HeartIcon } from '@heroicons/react/24/solid'
 
 export default function CTA() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -69,7 +69,7 @@ export default function CTA() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Join thousands of investors who are already earning attractive returns while supporting Africa&apos;s economic growth.
+          Invest with purpose. Build your future. Power Africa’s.
         </motion.p>
         
         {/* Stats */}
@@ -81,16 +81,22 @@ export default function CTA() {
           viewport={{ once: true }}
         >
           <div className="text-center">
-            <div className="text-3xl font-bold text-white mb-2">$50M+</div>
-            <div className="text-emerald-100">Assets Under Management</div>
+            <div className="flex items-center justify-center mb-2">
+              <GlobeAltIcon className="w-10 h-10 text-white" />
+            </div>
+            <div className="text-emerald-100">Fuel Africa's future through your investments</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-white mb-2">12%</div>
-            <div className="text-emerald-100">Average Annual Return</div>
+            <div className="flex items-center justify-center mb-2">
+              <UserGroupIcon className="w-10 h-10 text-white" />
+            </div>
+            <div className="text-emerald-100">Built by licensed professionals who share your story</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-white mb-2">5,000+</div>
-            <div className="text-emerald-100">Active Investors</div>
+            <div className="flex items-center justify-center mb-2">
+              <HeartIcon className="w-10 h-10 text-white" />
+            </div>
+            <div className="text-emerald-100">Created by Africans abroad—for Africans abroad</div>
           </div>
         </motion.div>
         

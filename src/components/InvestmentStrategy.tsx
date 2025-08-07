@@ -48,26 +48,26 @@ export default function InvestmentStrategy() {
                   <span className="font-bold text-gray-900">$25,000</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-700">Platform Fee (0.5%):</span>
-                  <span className="font-bold text-gray-900">$125</span>
+                  <span className="text-gray-700">Platform Fee (1.0%):</span>
+                  <span className="font-bold text-gray-900">$250</span>
                 </div>
               </div>
             </div>
 
             {/* Capital Growth Projection */}
             <div className="mb-6">
-              <h4 className="font-semibold text-gray-900 mb-3">5-Year Capital Growth Projection</h4>
+              <h4 className="font-semibold text-gray-900 mb-3">5-Year Interest Earnings Estimate</h4>
               <div className="space-y-3">
                 <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-700">Annual Interest (12%):</span>
+                    <span className="text-gray-700">Annual Interest (12%) - (Illustrative):</span>
                     <span className="font-bold text-emerald-600">$3,000/year</span>
                   </div>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-700">Total Return (5 years):</span>
-                    <span className="font-bold text-blue-600">$40,000</span>
+                    <span className="text-gray-700">Projected Earnings (5 years):</span>
+                    <span className="font-bold text-blue-600">$15,000</span>
                   </div>
                 </div>
               </div>
@@ -79,6 +79,7 @@ export default function InvestmentStrategy() {
                 <span>Portfolio Completion</span>
                 <span>75%</span>
               </div>
+              
               <div className="w-full bg-gray-200 rounded-full h-2">
                 <motion.div 
                   className="bg-emerald-600 h-2 rounded-full"
@@ -89,6 +90,7 @@ export default function InvestmentStrategy() {
                 />
               </div>
             </div>
+            <p>Projected figures are illustrative and not guaranteed. Bond yields can fluctuate depending on market conditions and reinvestment strategies.</p>
           </motion.div>
 
           {/* Features List */}
@@ -105,7 +107,7 @@ export default function InvestmentStrategy() {
               </div>
               <div>
                 <h4 className="text-xl font-bold text-gray-900 mb-2">Flexible Investment Amounts</h4>
-                <p className="text-gray-600">Start with as little as $1,000 and scale your portfolio over time with our flexible investment options.</p>
+                <p className="text-gray-600">Start with as little as <b>$100</b> and scale your portfolio over time with our flexible investment options.</p>
               </div>
             </div>
 
@@ -125,7 +127,7 @@ export default function InvestmentStrategy() {
               </div>
               <div>
                 <h4 className="text-xl font-bold text-gray-900 mb-2">Automated Reinvestment</h4>
-                <p className="text-gray-600">Set up automatic reinvestment of interest payments to maximize your compound returns.</p>
+                <p className="text-gray-600"> Set up recurring monthly investments or reinvest your interest automatically to maximize compounding</p>
               </div>
             </div>
 
@@ -137,7 +139,7 @@ export default function InvestmentStrategy() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Start Planning Your Investment
+              Get Started
             </motion.a>
           </motion.div>
         </div>
