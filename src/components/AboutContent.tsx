@@ -11,7 +11,7 @@ import {
 
 export default function AboutContent() {
   const stats = [
-    { number: '$50M+', label: 'Assets Under Management' },
+    { number: '$5M+', label: 'Assets Under Management' },
     { number: '5,000+', label: 'Active Investors' },
     { number: '6', label: 'African Markets' },
     { number: '12%+', label: 'Average Returns' }

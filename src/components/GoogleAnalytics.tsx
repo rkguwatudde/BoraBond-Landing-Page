@@ -12,6 +12,7 @@ import {
   HOTJAR_ID,
   pageview 
 } from '@/lib/analytics'
+import Image from 'next/image'
 
 export default function GoogleAnalytics() {
   return (
@@ -173,7 +174,7 @@ function GoogleAnalyticsInner() {
       </noscript>
       
       <noscript>
-        <img
+        <Image
           height="1"
           width="1"
           style={{ display: 'none' }}

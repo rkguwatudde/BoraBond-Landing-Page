@@ -1,27 +1,28 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowTrendingUpIcon, ShieldCheckIcon, GlobeAltIcon } from '@heroicons/react/24/outline'
+import { ArrowTrendingUpIcon, GlobeAltIcon, SunIcon } from '@heroicons/react/24/outline'
 
 export default function WhyAfricanBonds() {
   const benefits = [
     {
       icon: ArrowTrendingUpIcon,
-      title: "High Returns",
-      description: "African government bonds typically offer yields of 8-15%, significantly higher than developed market alternatives.",
+      title: "Higher Yields",
+      description: "African government bonds often offer yields 2–3x higher than those in most developed markets.",
       color: "text-emerald-600"
     },
-    {
-      icon: ShieldCheckIcon,
-      title: "Government Backed",
-      description: "Sovereign bonds are backed by the full faith and credit of African governments, providing institutional-grade security.",
-      color: "text-blue-600"
-    },
+    
     {
       icon: GlobeAltIcon,
       title: "Diversification",
       description: "Access emerging market exposure and diversify your portfolio beyond traditional Western markets.",
       color: "text-purple-600"
+    },
+    {
+      icon: SunIcon,
+      title: "Shape Africa’s Future",
+      description: "Your investment powers real progress, funding the infrastructure, services, and opportunities Africa needs to thrive",
+      color: "text-blue-600"
     }
   ]
 
@@ -39,9 +40,9 @@ export default function WhyAfricanBonds() {
             Why African Government Bonds?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Africa&apos;s growing economies offer unique investment opportunities with attractive returns 
-            and the potential for significant portfolio diversification.
-          </p>
+          Africa’s growing economies offer a unique opportunity to earn strong returns, diversify your portfolio, and contribute to the continent’s development.
+            
+             </p>
         </motion.div>
         
         <div className="grid md:grid-cols-3 gap-8">
@@ -69,6 +70,16 @@ export default function WhyAfricanBonds() {
             </motion.div>
           ))}
         </div>
+
+
+        <div className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+             
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          The Opportunity is Massive—And So is the Diaspora’s Potential to Shape It!
+          </p>
+          </div>
         
         {/* Additional Stats Section */}
         <motion.div 
@@ -78,22 +89,24 @@ export default function WhyAfricanBonds() {
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
+
+          
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-emerald-600 mb-2">6.2%</div>
-              <div className="text-sm text-gray-600">Average GDP Growth</div>
+              <div className="text-3xl font-bold text-emerald-600 mb-2">$130 - 170B</div>
+              <div className="text-sm text-gray-600">What Africa needs to build infrastructure like roads, hospitals & energy each year</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-emerald-600 mb-2">1.4B</div>
-              <div className="text-sm text-gray-600">Population</div>
+              <div className="text-3xl font-bold text-emerald-600 mb-2">$68 - 108B</div>
+              <div className="text-sm text-gray-600">Unmet funding needed to close the infrastructure gap each year</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-emerald-600 mb-2">54</div>
-              <div className="text-sm text-gray-600">Countries</div>
+              <div className="text-3xl font-bold text-emerald-600 mb-2">$100B</div>
+              <div className="text-sm text-gray-600">Capital sent back home, enough to close Africa’s infrastructure gap</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-emerald-600 mb-2">$3.4T</div>
-              <div className="text-sm text-gray-600">Combined GDP</div>
+              <div className="text-3xl font-bold text-emerald-600 mb-2">+2% GDP Boost</div>
+              <div className="text-sm text-gray-600">It’s more than GDP—it’s dignity, mobility, health, and hope</div>
             </div>
           </div>
         </motion.div>

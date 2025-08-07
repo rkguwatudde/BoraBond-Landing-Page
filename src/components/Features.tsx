@@ -15,42 +15,42 @@ export default function Features() {
     {
       icon: ShieldCheckIcon,
       title: "Institutional Security",
-      description: "Bank-grade security with multi-factor authentication and encrypted transactions to protect your investments.",
+      description: "Bank-grade security with encryption and multi-factor authentication.",
       color: "text-emerald-600",
       bgColor: "bg-emerald-100"
     },
     {
       icon: ChartBarIcon,
       title: "Real-Time Analytics",
-      description: "Comprehensive portfolio tracking with detailed performance metrics and market insights.",
+      description: "Monitor your performance with clarity and confidence.",
       color: "text-blue-600",
       bgColor: "bg-blue-100"
     },
     {
       icon: CurrencyDollarIcon,
       title: "Competitive Fees",
-      description: "Low platform fees starting at 0.5% with transparent pricing and no hidden charges.",
+      description: "1.0% flat fee. No hidden charges. Ever.",
       color: "text-green-600",
       bgColor: "bg-green-100"
     },
     {
       icon: GlobeAltIcon,
-      title: "Global Access",
-      description: "Access bonds from 15+ African countries with detailed country risk assessments and ratings.",
+      title: "Diversification",
+      description: "Access bonds from multiple African countries with a single platform.",
       color: "text-purple-600",
       bgColor: "bg-purple-100"
     },
     {
       icon: ClockIcon,
       title: "24/7 Trading",
-      description: "Trade African government bonds around the clock with our automated matching engine.",
+      description: "Enjoy 24/7 access to explore and invest in African government bonds.",
       color: "text-orange-600",
       bgColor: "bg-orange-100"
     },
     {
       icon: UserGroupIcon,
       title: "Expert Support",
-      description: "Dedicated relationship managers and investment advisors to guide your African bond strategy.",
+      description: "Get personalized support for your African bond investing strategy.",
       color: "text-indigo-600",
       bgColor: "bg-indigo-100"
     }
@@ -111,16 +111,16 @@ export default function Features() {
         >
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold mb-2">12%+</div>
-              <div className="text-emerald-100">Average Annual Returns</div>
+              <div className="text-3xl font-bold mb-2">1.0%</div>
+              <div className="text-emerald-100">Annual Management Fee</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">$1,000</div>
-              <div className="text-emerald-100">Minimum Investment</div>
+              <div className="text-3xl font-bold mb-2">$100</div>
+              <div className="text-emerald-100">Low Minimum Investment</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">5-10 Years</div>
-              <div className="text-emerald-100">Typical Bond Terms</div>
+              <div className="text-3xl font-bold mb-2">Pan-African</div>
+              <div className="text-emerald-100">Access to Multiple African Markets</div>
             </div>
           </div>
         </motion.div>

@@ -19,7 +19,7 @@ export default function HowItWorks() {
     {
       icon: MagnifyingGlassIcon,
       title: "Browse Bonds",
-      description: "Explore our curated selection of African government bonds with detailed analytics and risk assessments.",
+      description: "Start building your investment strategy, explore curated African bonds or let us help you choose the best options.",
       step: "02"
     },
     {
@@ -121,7 +121,7 @@ export default function HowItWorks() {
               Ready to Start Your Investment Journey?
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Join thousands of investors who are already earning attractive returns 
+              Join other African Diaspora investors who are already earning attractive returns 
               while supporting Africa&apos;s economic growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
