@@ -79,7 +79,10 @@ export default function Footer() {
           >
             <h3 className="text-2xl font-bold text-emerald-400 mb-4">BoraBond</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-
+              Your gateway to African government bonds. Invest in Africa&apos;s growth 
+              while earning attractive returns with institutional-grade security.
+            </p>
+            
             {/* Social Links */}
             <div className="flex space-x-4 mt-6">
               {socialLinks.map((link) => (
@@ -95,9 +98,6 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-              Your gateway to African government bonds. Invest in Africa&apos;s growth 
-              while earning attractive returns with institutional-grade security.
-            </p>
             
             {/* Contact Info */}
             <div className="space-y-3">
