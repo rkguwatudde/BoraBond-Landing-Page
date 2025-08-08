@@ -60,8 +60,8 @@ export default function AboutUs() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              From Frustration to Vision: Why I Built BoraBond
+            <h1 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6">
+              From Frustration to Vision: Why We Built BoraBond
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
               A personal challenge led me to create a platform for the African diaspora to invest back home, securely, 
@@ -252,8 +252,8 @@ export default function AboutUs() {
                       <CalendarIcon className="h-5 w-5 text-blue-700" />
                     </div>
                     <div>
-                      <div className="text-sm font-medium">Term Length</div>
-                      <div className="text-xl font-bold">20 Years</div>
+                      <div className="text-sm font-medium text-gray-700">Term Length</div>
+                      <div className="text-xl font-bold text-green-700">20 Years</div>
                     </div>
                   </div>
                   
@@ -262,8 +262,8 @@ export default function AboutUs() {
                       <BuildingLibraryIcon className="h-5 w-5 text-amber-700" />
                     </div>
                     <div>
-                      <div className="text-sm font-medium">Issuer</div>
-                      <div className="text-xl font-bold">Uganda</div>
+                      <div className="text-sm font-medium text-gray-700">Issuer</div>
+                      <div className="text-xl font-bold text-green-700">Uganda</div>
                     </div>
                   </div>
                 </div>
