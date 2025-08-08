@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { generateMetadata } from '@/lib/seo'
-import AboutContent from '@/components/AboutContent'
+import AboutUs from '@/components/AboutUs'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -22,7 +22,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <AboutContent />
+      <AboutUs />
       <Footer />
     </div>
   )
