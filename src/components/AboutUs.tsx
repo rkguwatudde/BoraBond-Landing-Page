@@ -6,30 +6,25 @@ import {
   RocketLaunchIcon,
   LightBulbIcon,
   BuildingLibraryIcon,
-  ChartBarIcon,
   GlobeAltIcon,
-  BanknotesIcon,
   UserGroupIcon,
   ShieldCheckIcon,
   QuestionMarkCircleIcon,
-  CheckCircleIcon,
-  ExclamationCircleIcon,
   PhoneIcon,
   UserIcon,
   BuildingOfficeIcon,
   NewspaperIcon,
   CalendarIcon
 } from '@heroicons/react/24/outline'
-import Image from 'next/image'
 import React from 'react'
 
 export default function AboutUs() {
   // Barriers to investment list
-  const investmentBarriers = [
-    "Couldn't access bonds outside Uganda",
-    "Couldn't open bank accounts across borders",
-    "U.S. platforms required $100K and only offered limited options"
-  ]
+  // const investmentBarriers = [
+  //   "Couldn't access bonds outside Uganda",
+  //   "Couldn't open bank accounts across borders",
+  //   "U.S. platforms required $100K and only offered limited options"
+  // ]
   
   // Mission value cards
   const valueCards = [
@@ -106,7 +101,7 @@ export default function AboutUs() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-4">McKinsey Policy</h3>
               <p className="text-gray-600 text-center text-lg">
-                I couldn't invest in U.S. stocks because McKinsey had a strict policy, consultants weren't allowed to, given our access to privileged information
+                I couldn&apos;t invest in U.S. stocks because McKinsey had a strict policy, consultants weren&apos;t allowed to, given our access to privileged information
               </p>
             </motion.div>
             
@@ -125,7 +120,7 @@ export default function AboutUs() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-4">The Connection Home</h3>
               <p className="text-gray-600 text-center text-lg">
-              With U.S. stocks off the table, I began looking elsewhere. As an African, the answer felt deeply personal. I’ve always envisioned building a life back home, so if I hoped to live and work there, Africa was a must-invest destination.
+              With U.S. stocks off the table, I began looking elsewhere. As an African, the answer felt deeply personal. I&apos;ve always envisioned building a life back home, so if I hoped to live and work there, Africa was a must-invest destination.
               </p>
             </motion.div>
           </div>
@@ -158,7 +153,7 @@ export default function AboutUs() {
             viewport={{ once: true }}
           >
             <p className="text-2xl font-medium text-gray-800 italic">
-              "I wanted something that was transparent, professional, and built to last."
+              &quot;I wanted something that was transparent, professional, and built to last.&quot;
             </p>
           </motion.div>
 
@@ -172,12 +167,12 @@ export default function AboutUs() {
               viewport={{ once: true }}
             >
               <p className="text-lg text-gray-700 mb-4">
-                For too long, the African diaspora has tried investing back home, through family, through friends, in real estate, farms, small businesses. I'd watched these investments fail time and again, each one more heartbreaking than the last
+                For too long, the African diaspora has tried investing back home, through family, through friends, in real estate, farms, small businesses. I&apos;d watched these investments fail time and again, each one more heartbreaking than the last
               </p>
               
               <div className="bg-red-50 border-l-4 border-red-400 p-4 mb-5">
                 <p className="text-red-700 font-medium">
-                  "We don't just lose money, we lose relationships. We lose trust. These failures cut deeper than financial loss alone, with no recourse, no accountability."
+                  &quot;We don&apos;t just lose money, we lose relationships. We lose trust. These failures cut deeper than financial loss alone, with no recourse, no accountability.&quot;
                 </p>
               </div>
               
@@ -209,7 +204,7 @@ export default function AboutUs() {
               
               <div className="bg-emerald-50 border-l-4 border-emerald-400 p-4">
                 <p className="text-emerald-700 font-medium">
-                  "This wasn't just an investment; it was a revelation about the untapped potential of African government bonds."
+                  &quot;This wasn&apos;t just an investment; it was a revelation about the untapped potential of African government bonds.&quot;
                 </p>
               </div>
             </motion.div>
@@ -363,8 +358,8 @@ export default function AboutUs() {
                   <h3 className="text-2xl font-bold mb-4 text-red-700">No Bridge to African Bonds</h3>
                   
                   <p className="text-gray-800 text-lg mb-5">
-                    "I couldn't just fly to another African country to do this, the only option was going through a US brokerage.
-                    However, I couldn't find a US brokerage that could get me local currency bonds from the continent."
+                    &quot;I couldn&apos;t just fly to another African country to do this, the only option was going through a US brokerage.
+                    However, I couldn&apos;t find a US brokerage that could get me local currency bonds from the continent.&quot;
                   </p>
                   
                   {/* Platform search - Simplified */}
@@ -455,7 +450,7 @@ export default function AboutUs() {
                   
                   <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 shadow-sm">
                     <p className="text-gray-800 text-center font-medium">
-                      The market clearly wasn't designed for people like me, the African diaspora
+                      The market clearly wasn&apos;t designed for people like me, the African diaspora
                     </p>
                   </div>
                 </div>
@@ -539,7 +534,7 @@ export default function AboutUs() {
             viewport={{ once: true }}
           >
             <blockquote className="text-2xl text-gray-800 max-w-3xl mx-auto font-medium italic mb-10">
-              "We’re building the bridge I wish I had, so you can invest with confidence, not compromise."
+              &quot;We’re building the bridge I wish I had, so you can invest with confidence, not compromise.&quot;
             </blockquote>
             
             <div className="flex flex-col items-center">
