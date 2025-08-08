@@ -69,7 +69,7 @@ export default function CTA() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Invest with purpose. Build your future. Power Africa’s.
+          Invest with purpose. Build your future. Power Africa&apos;s.
         </motion.p>
         
         {/* Stats */}
@@ -84,7 +84,7 @@ export default function CTA() {
             <div className="flex items-center justify-center mb-2">
               <GlobeAltIcon className="w-10 h-10 text-white" />
             </div>
-            <div className="text-emerald-100">Fuel Africa's future through your investments</div>
+            <div className="text-emerald-100">Fuel Africa&apos;s future through your investments</div>
           </div>
           <div className="text-center">
             <div className="flex items-center justify-center mb-2">
